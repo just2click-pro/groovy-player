@@ -1,0 +1,15 @@
+<h2>{{ title }}</h2>
+
+<ul>
+    <li *ngFor="let artist of _displayArtists, let i = index">
+        <section class="card" [ngClass]="{ 'large-image': _toggledImage == (i + 1) }">
+            <div class="content">
+                <div class="flag"><img alt={{artist.country.name}} src={{artist.country.image_url}} /></div>
+                <div class="avatar" (click)="toggleImage(i + 1)"><img alt={{artist.name}} src={{artist.image_url}}/></div>
+                <div class="square-image" (click)="toggleImage(i + 1)"><img alt={{artist.name}} src={{artist.image_url}}/></div>
+                <div class="name">{{ artist.name }} <span class="year"> ({{ artist.year_started }})</span></div>
+            </div>
+            <div class="song-link" (click)="playSong(artist.youtube_url)">Play artist song</div>
+        </section>
+    </li>
+</ul>

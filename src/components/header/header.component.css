@@ -1,0 +1,34 @@
+:host {
+    align-items: center;
+    display: flex;
+    background: black;
+    color: #fff;
+    font-family: "Times New Roman", Times, serif;
+    height: 60px;
+    text-shadow: 1px 0px rgba(255, 255, 255, 0.75);
+}
+
+h1 {
+    display: inline-block;
+}
+
+.groovy-logo {
+    background-image: url('../../assets/groovy.png');
+    background-color: transparent;
+    background-position: center;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    padding: 5px;
+    width: 50px;
+}
+
+:host select {
+    align-self: center;
+    font-size: 14px;
+    height: 22px;
+    margin: 0 15px;
+    line-height: 22px;
+}

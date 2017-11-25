@@ -1,0 +1,115 @@
+:host {
+    background: lightblue;
+    min-width: 250px;
+    max-width: 250px;
+}
+
+:host h2 {
+    text-align: center;
+}
+
+:host ul {
+    list-style: none;
+    margin: 2px;
+    padding: 0;
+}
+
+:host ul>li .card {
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .75);
+    display: flex;
+    margin: 5px;
+    height: 120px;
+    position: relative;
+    width: 230px;
+}
+
+.card .content {
+    display: flex;
+    width: 100%;
+    height: 80%;
+}
+
+.content .avatar {
+    align-self: center;
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+.content .avatar img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .75);
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+
+.content .flag {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.content .flag img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .75);
+    height: 30px;
+    width: 40px;
+}
+
+.large-image .avatar {
+    display: none;
+}
+
+.content .large-image {
+    display: none;
+}
+
+.large-image .square-image {
+    align-self: center;
+    display: block !important;
+}
+
+.large-image .name {
+    align-self: flex-end !important;
+    margin: 0 5px;
+}
+
+.content .square-image {
+    display: none;
+}
+
+.square-image img {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    height: 80px;
+    margin: 0 5px;
+    width: 120px;
+}
+
+.content .name {
+    align-self: center;
+    color: #2C3539;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+.content .year {
+    align-self: center;
+    color: #2C3539;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.card .song-link {
+    bottom: 0;
+    color: #4285F4;
+    margin: 0 0 5px 5px;
+    position: absolute;
+    text-decoration: underline;
+}
+
+.song-link:hover {
+    cursor: pointer;
+}

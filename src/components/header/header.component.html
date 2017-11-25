@@ -1,0 +1,8 @@
+<div class="groovy-logo"></div>
+<h1>{{ title }}</h1>
+<select placeholder="Select Nationality" name="Select Natiionality" (change)="filterNationality($event)">
+    <option value="" [selected]="_selected == 0" [value]="0">Select Natiionality</option>
+    <option *ngFor="let country of _nationalities" [value]="country.id">
+        {{ country.name }}
+    </option>
+</select>
